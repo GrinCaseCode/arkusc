@@ -220,6 +220,7 @@
         height: 100%;
         top: 0;
         left: 0;
+        padding-bottom: 40px;
         position: fixed;
         z-index: 1000;
         background: #fff;
@@ -339,6 +340,7 @@
     }
     .menu-list > li ul {
         display: none;
+        overflow: hidden;
     }
     .menu-list > li ul li a {
         padding: 5px 20px;
