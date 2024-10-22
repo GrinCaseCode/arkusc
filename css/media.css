@@ -448,6 +448,13 @@
         border-radius: 35px;
         transform: none;
     }
+    .btn-card {
+        width: 35px;
+        height: 35px;
+    }
+    .btn-card::before {
+        font-size: 14px;
+    }
 }
 
 /* Small Devices, Tablets */
