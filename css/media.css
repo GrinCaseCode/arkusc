@@ -436,6 +436,9 @@
         width: 23px;
         height: auto;
     }
+    .body_search {
+        overflow: hidden;
+    }
 }
 
 /* Small Devices, Tablets */
