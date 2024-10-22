@@ -439,6 +439,12 @@
     .body_search {
         overflow: hidden;
     }
+    .item-catalog__buttons {
+        visibility: visible;
+        opacity: 1;
+        border-radius: 35px;
+        transform: none;
+    }
 }
 
 /* Small Devices, Tablets */
