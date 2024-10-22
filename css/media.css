@@ -436,6 +436,7 @@
         width: 23px;
         height: auto;
     }
+    .no-scroll,
     .body_search {
         overflow: hidden;
     }
