@@ -89,14 +89,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		e.preventDefault();
 		if ($(".search-form").is(":hidden")) {
 			$(".search-form").fadeIn(200);
+			$("body").addClass("body_search");
 		} else {
 			$(".search-form").fadeOut(200);
+			$("body").removeClass("body_search");
 		}
 	});
 
 	$(".search-form__close").click(function(e) {
 		e.preventDefault();
 		$(".search-form").fadeOut(200);
+		$("body").removeClass("body_search");
 	});
 
 
@@ -104,6 +107,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		var container2 = $(".search-wrap");
 		if (container2.has(e.target).length === 0){
 			$(".search-form").fadeOut(200);
+			$("body").removeClass("body_search");
 		}
 	  });
 
