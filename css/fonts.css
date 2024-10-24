@@ -165,9 +165,9 @@
   @font-face {
     font-family: 'woodmart-font';
     src: local('woodmart-font'), local('woodmart-font'),
-        url('../fonts/woodmart-font.woff2') format('woff2'),
-        url('../fonts/woodmart-font.woff') format('woff'),
-        url('../fonts/woodmart-font.ttf') format('truetype');
+        url('../fonts/woodmart-font-1-400.woff2') format('woff2'),
+        url('../fonts/woodmart-font-1-400.woff') format('woff'),
+        url('../fonts/woodmart-font-1-400.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
   }

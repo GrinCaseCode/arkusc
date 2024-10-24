@@ -455,6 +455,25 @@
     .btn-card::before {
         font-size: 14px;
     }
+    .title-page {
+        font-size: 22px;
+    }
+    .text-page {
+        font-size: 14px;
+    }
+    .page-about {
+        padding-top: 20px;
+    }
+    .map-about {
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .slider-documents .slick-slide {
+        padding: 5px;
+    }
+    .slider-documents .slick-list {
+        margin: -5px;
+    }
 }
 
 /* Small Devices, Tablets */
