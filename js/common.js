@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	jQuery('.range-catalog').each(function() {
+		var $range = $(this).find("input"),
+			$from = $range.attr("from"),
+			$to = $range.attr("to"),
+			min = $range.attr("min"),
+			max = $range.attr("max")
+			$range.ionRangeSlider({
+				type: "double",
+				min: min,
+				max: max,
+				from: $from,
+				to: $to,
+				prettify_enabled: true,
+
+			});
+	
+		});
+
 
 //прилипающие меню
 var $menu = $(".header");
@@ -174,11 +192,31 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-documents').slick({
+		arrows: true,
+		dots: true,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 5,
+		slidesToScroll: 5,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-chevron-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			}
+		]
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
 	 // стайлер для select
-	 $('select').styler();
+	 $('.item-select select').styler();
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
